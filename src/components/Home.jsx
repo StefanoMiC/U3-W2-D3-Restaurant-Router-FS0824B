@@ -64,6 +64,7 @@ const Home = ({ menu }) => {
         ma ci sarà il fallback sul caso else del ternario stesso, generando un elemento alternativo ed
         evitando così errori che potrebbero nascere dalla lettura di null.comments ad esempio
         */}
+        
           {selectedPasta ? ( //prettier-ignore
             <DishComments selectedPasta={selectedPasta} />
           ) : (

@@ -10,6 +10,7 @@ import ReservationList from "./components/ReservationList";
 import NotFound from "./components/NotFound";
 import MenuList from "./components/MenuList";
 import PastaDetails from "./components/PastaDetails";
+import ClassComponent from "./components/ClassComponent";
 
 // ROUTING IN REACT
 
@@ -44,7 +45,7 @@ const App = () => (
         potrà essere letteralmente qualsiasi cosa, e sarà poi un valore recuperabile all'interno del componente
       */}
       <Route path="/menu/dettagli/:pastaId/" element={<PastaDetails menu={menu} />} />
-
+      <Route path="/class-component/:dynamicId" element={<ClassComponent title="Epicode" />} />
       <Route path="/counter" element={<Counter />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
